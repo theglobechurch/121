@@ -71,7 +71,11 @@ Question.propTypes = {
     type: string,
   }).isRequired,
   itemNo: string.isRequired,
-  location: string.isRequired,
+  location: string,
   passage: string.isRequired,
   scripture: arrayOf(string).isRequired,
+};
+
+Question.defaultProps = {
+  location: null,
 };

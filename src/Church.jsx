@@ -139,5 +139,5 @@ Church.propTypes = {
   apiEndpoint: PropTypes.string.isRequired,
   setTitle: PropTypes.func.isRequired,
   setView: PropTypes.func.isRequired,
-  history: PropTypes.arrayOf(PropTypes.string).isRequired,
+  history: PropTypes.objectOf(PropTypes.any).isRequired,
 };

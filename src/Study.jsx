@@ -275,7 +275,7 @@ export default class Study extends Component {
 
 Study.propTypes = {
   study: shape({
-    date: string.isRequired,
+    date: string,
     description: string.isRequired,
     end: string.isRequired,
     image: string.isRequired,

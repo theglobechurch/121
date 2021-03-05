@@ -226,5 +226,9 @@ Guide.propTypes = {
     slug: string,
     url: string,
   }).isRequired,
-  title: string.isRequired,
+  title: string,
+};
+
+Guide.defaultProps = {
+  title: null,
 };

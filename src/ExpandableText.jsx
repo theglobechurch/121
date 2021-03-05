@@ -68,6 +68,10 @@ export default class ExpandableText extends Component {
 
 ExpandableText.propTypes = {
   expanded: PropTypes.bool.isRequired,
-  scripture: PropTypes.bool.isRequired,
+  scripture: PropTypes.bool,
   text: PropTypes.arrayOf(string).isRequired,
+};
+
+ExpandableText.defaultProps = {
+  scripture: null,
 };

@@ -61,11 +61,17 @@ export default class Card extends Component {
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
-  pretitle: PropTypes.string.isRequired,
+  pretitle: PropTypes.string,
   description: PropTypes.string.isRequired,
-  descriptionLimit: PropTypes.bool.isRequired,
+  descriptionLimit: PropTypes.bool,
   link: PropTypes.string.isRequired,
   cta: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
   image: PropTypes.string.isRequired,
+};
+
+Card.defaultProps = {
+  className: null,
+  descriptionLimit: null,
+  pretitle: null,
 };

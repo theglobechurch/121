@@ -93,5 +93,9 @@ GuideList.propTypes = {
     slug: string,
     url: string,
   }).isRequired,
-  promoted_guide: shape().isRequired,
+  promoted_guide: shape(),
+};
+
+GuideList.defaultProps = {
+  promoted_guide: null,
 };

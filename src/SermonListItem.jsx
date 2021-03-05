@@ -37,9 +37,16 @@ export default SermonListItem;
 
 SermonListItem.propTypes = {
   name: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  passage: PropTypes.string.isRequired,
-  baseUrl: PropTypes.string.isRequired,
+  date: PropTypes.string,
+  image: PropTypes.string,
+  passage: PropTypes.string,
+  baseUrl: PropTypes.string,
   displayImage: PropTypes.bool.isRequired,
+};
+
+SermonListItem.defaultProps = {
+  baseUrl: null,
+  date: null,
+  image: null,
+  passage: null,
 };

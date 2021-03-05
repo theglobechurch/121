@@ -33,7 +33,7 @@ const CoreNav = ({ view, guides }) => (
 );
 
 CoreNav.propTypes = {
-  view: PropTypes.string.isRequired,
+  view: PropTypes.string,
   guides: PropTypes.arrayOf(PropTypes.shape({
     copyRight: PropTypes.string,
     description: PropTypes.string,
@@ -43,7 +43,12 @@ CoreNav.propTypes = {
     name: PropTypes.string,
     slug: PropTypes.string,
     teaser: PropTypes.string,
-  })).isRequired,
+  })),
+};
+
+CoreNav.defaultProps = {
+  view: null,
+  guides: null,
 };
 
 export default CoreNav;

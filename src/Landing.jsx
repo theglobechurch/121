@@ -112,7 +112,7 @@ Landing.propTypes = {
     name: string,
     slug: string,
     teaser: string,
-  }).isRequired,
+  }),
   setView: func.isRequired,
   setTitle: func.isRequired,
   study: shape({
@@ -134,7 +134,12 @@ Landing.propTypes = {
     slug: string,
     start: string,
     website_url: string,
-  }).isRequired,
+  }),
+};
+
+Landing.defaultProps = {
+  guide: null,
+  study: null,
 };
 
 export default Landing;
